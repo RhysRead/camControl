@@ -8,6 +8,8 @@ import pyautogui
 pyautogui.FAILSAFE = False
 logging.basicConfig(level=logging.INFO)
 
+HAND_HAARCASCADE = "../haarcascades/hand.xml"
+
 
 class Rectangle(object):
     def __init__(self, x, y, w, h):
@@ -66,7 +68,7 @@ def intersection(a, b):
     w = min(a[0]+a[2], b[0]+b[2]) - x
     h = min(a[1]+a[3], b[1]+b[3]) - y
     if w < 0 or h < 0:
-        return () # or (0,0,0,0) ?
+        return ()  # or (0,0,0,0) ?
     return x, y, w, h
 
 
@@ -119,7 +121,7 @@ if __name__ == "__main__":
         x_ratio = screen_x_size / cap_y_size
         y_ratio = screen_y_size / cap_y_size
 
-    hand_cascade = cv2.CascadeClassifier('hand.xml')
+    hand_cascade = cv2.CascadeClassifier(HAND_HAARCASCADE)
 
     move = True
 
