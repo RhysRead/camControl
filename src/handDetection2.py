@@ -114,12 +114,17 @@ if __name__ == "__main__":
 
     screen_x_size, screen_y_size = pyautogui.size()
 
-    x_ratio = screen_x_size / cap_y_size
-    y_ratio = screen_y_size / cap_y_size
+    if cap_y_size != 0:
+        logging.WARNING("Failed to generate cursor ratios.")
+        x_ratio = screen_x_size / cap_y_size
+        y_ratio = screen_y_size / cap_y_size
 
     hand_cascade = cv2.CascadeClassifier('hand.xml')
 
     move = True
+
+    if not cap.isOpened():
+        logging.fatal("Failed to open video capture feed. This is most likely the camera not being seen")
 
     while cap.isOpened():
         got_hands_multiple = []

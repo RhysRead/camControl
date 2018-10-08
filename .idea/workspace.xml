@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5959df97-308f-481a-8908-938bc220e7c2" name="Default" comment="" />
+    <list default="true" id="5959df97-308f-481a-8908-938bc220e7c2" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/camControl.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/camControl.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/a/1a8f0b6b0f7e9caab98ec90107bc40fd0b856ff3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/2/22dbae515bf227eebd2c4253e76ce13ed2c0dc01" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/3/83f671261725a56ee3a2db253414ac13869cfc18" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/5/e5114819c2d107f098a3641f91640f85be446f9c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eye.xml" beforeDir="false" afterPath="$PROJECT_DIR$/haarcascades/eye.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/face.xml" beforeDir="false" afterPath="$PROJECT_DIR$/haarcascades/face.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/handDetection2.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/handDetection2.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,7 +27,7 @@
       <file leaf-file-name="videoCapExample.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/videoCapExample.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1118">
+            <state relative-caret-position="1204">
               <caret line="46" column="18" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
               <folding>
                 <element signature="e#34#45#0" expanded="true" />
@@ -26,7 +39,7 @@
       <file leaf-file-name="handDetection.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/handDetection.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3094">
+            <state relative-caret-position="3332">
               <caret line="122" column="22" selection-start-line="122" selection-start-column="22" selection-end-line="122" selection-end-column="22" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
@@ -38,8 +51,11 @@
       <file leaf-file-name="handDetection2.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/handDetection2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2184">
-              <caret line="153" column="37" selection-start-line="153" selection-start-column="37" selection-end-line="153" selection-end-column="37" />
+            <state relative-caret-position="924">
+              <caret line="132" column="29" lean-forward="true" selection-start-line="132" selection-start-column="29" selection-end-line="132" selection-end-column="29" />
+              <folding>
+                <element signature="e#20#34#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -47,7 +63,7 @@
       <file leaf-file-name="hand.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hand.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="55302">
+            <state relative-caret-position="59556">
               <caret line="2127" selection-start-line="2127" selection-end-line="2127" />
             </state>
           </provider>
@@ -56,7 +72,7 @@
       <file leaf-file-name="lineExample.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lineExample.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
+            <state relative-caret-position="56">
               <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
@@ -65,7 +81,7 @@
       <file leaf-file-name="identifyExample.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/identifyExample.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
+            <state relative-caret-position="140">
               <caret line="8" selection-start-line="8" selection-end-line="8" />
               <folding>
                 <element signature="e#34#45#0" expanded="true" />
@@ -89,6 +105,9 @@
       <find>print</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -102,6 +121,7 @@
         <option value="$PROJECT_DIR$/handDetection.py" />
         <option value="$PROJECT_DIR$/hand.xml" />
         <option value="$PROJECT_DIR$/handDetection2.py" />
+        <option value="$PROJECT_DIR$/src/handDetection2.py" />
       </list>
     </option>
   </component>
@@ -123,22 +143,22 @@
               <item name="camControl" type="b2602c69:ProjectViewProjectNode" />
               <item name="camControl" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="camControl" type="b2602c69:ProjectViewProjectNode" />
-              <item name="camControl" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
     </panes>
   </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\rhysr\PycharmProjects\camControl" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Documents\GitHub\camControl\haarcascades" />
       <recent name="C:\Users\rhysr\PycharmProjects\camControl" />
     </key>
   </component>
@@ -154,25 +174,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.handDetection2">
-    <configuration name="Main" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="camControl" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\rhysr\PycharmProjects\camControl\videoCapExample.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
+  <component name="RunManager" selected="Python.handDetection2 (1)">
     <configuration name="handDetection" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="camControl" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -186,6 +188,24 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="C:\Users\rhysr\PycharmProjects\camControl\src\handDetection.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="handDetection2 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="camControl" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/handDetection2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -246,19 +266,19 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list>
-      <item itemvalue="Python.Main" />
       <item itemvalue="Python.lineExample" />
       <item itemvalue="Python.videoCapExample" />
       <item itemvalue="Python.handDetection" />
       <item itemvalue="Python.handDetection2" />
+      <item itemvalue="Python.handDetection2 (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.handDetection2 (1)" />
         <item itemvalue="Python.handDetection2" />
         <item itemvalue="Python.handDetection" />
         <item itemvalue="Python.videoCapExample" />
         <item itemvalue="Python.lineExample" />
-        <item itemvalue="Python.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -276,19 +296,20 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="56" y="-6" width="1551" height="913" extended-state="6" />
+    <frame x="-8" y="-8" width="2576" height="1456" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11711126" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11679687" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="SonarLint" order="7" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22473605" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.22519083" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3994911" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -302,13 +323,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/hand.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55302">
-          <caret line="2127" selection-start-line="2127" selection-end-line="2127" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/lineExample.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
@@ -663,7 +677,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lineExample.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
+        <state relative-caret-position="56">
           <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
@@ -671,14 +685,14 @@
     <entry file="file://$PROJECT_DIR$/test.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/face.xml">
+    <entry file="file://$PROJECT_DIR$/haarcascades/face.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="407">
           <caret line="33314" selection-start-line="33314" selection-end-line="33314" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eye.xml">
+    <entry file="file://$PROJECT_DIR$/haarcascades/eye.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="668">
           <caret line="12213" selection-start-line="12213" selection-end-line="12213" />
@@ -694,14 +708,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hand.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55302">
+        <state relative-caret-position="59556">
           <caret line="2127" selection-start-line="2127" selection-end-line="2127" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/identifyExample.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
+        <state relative-caret-position="140">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
           <folding>
             <element signature="e#34#45#0" expanded="true" />
@@ -711,7 +725,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/videoCapExample.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1118">
+        <state relative-caret-position="1204">
           <caret line="46" column="18" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
           <folding>
             <element signature="e#34#45#0" expanded="true" />
@@ -721,7 +735,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/handDetection.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3094">
+        <state relative-caret-position="3332">
           <caret line="122" column="22" selection-start-line="122" selection-start-column="22" selection-end-line="122" selection-end-column="22" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
@@ -729,10 +743,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1797" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/handDetection2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2184">
-          <caret line="153" column="37" selection-start-line="153" selection-start-column="37" selection-end-line="153" selection-end-column="37" />
+        <state relative-caret-position="924">
+          <caret line="132" column="29" lean-forward="true" selection-start-line="132" selection-start-column="29" selection-end-line="132" selection-end-column="29" />
+          <folding>
+            <element signature="e#20#34#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
