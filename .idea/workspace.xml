@@ -70,6 +70,7 @@
     <findStrings>
       <find>drawing</find>
       <find>print</find>
+      <find>.xml</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
