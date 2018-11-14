@@ -25,6 +25,9 @@ class Camera(object):
         ret, frame = self.__cap.read()
         return frame
 
+    def get_image_size(self):
+        return self.__cap_x_size, self.__cap_y_size
+
     def close_feed(self):
         # todo: Complete this method
         pass
