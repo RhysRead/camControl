@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5959df97-308f-481a-8908-938bc220e7c2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/hand.xml" beforeDir="false" afterPath="$PROJECT_DIR$/haarcascades/hand.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/handDetection2.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/handDetection2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/upper_body.xml" beforeDir="false" afterPath="$PROJECT_DIR$/haarcascades/upper_body.xml" afterDir="false" />
-    </list>
+    <list default="true" id="5959df97-308f-481a-8908-938bc220e7c2" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,23 +11,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="videoCapExample.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/videoCapExample.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1204">
-              <caret line="46" column="18" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
-              <folding>
-                <element signature="e#34#45#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="handDetection2.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/handDetection2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="794">
-              <caret line="174" lean-forward="true" selection-start-line="174" selection-end-line="174" />
+            <state relative-caret-position="668">
+              <caret line="174" selection-start-line="174" selection-end-line="174" />
               <folding>
                 <element signature="e#20#34#0" expanded="true" />
               </folding>
@@ -42,17 +26,8 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="85" column="5" lean-forward="true" selection-start-line="85" selection-start-column="5" selection-end-line="85" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="hand.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/haarcascades/hand.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="59556">
-              <caret line="2127" selection-start-line="2127" selection-end-line="2127" />
+            <state relative-caret-position="2210">
+              <caret line="85" column="5" selection-start-line="85" selection-start-column="5" selection-end-line="85" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -104,7 +79,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -126,6 +100,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -275,20 +250,19 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="2576" height="1456" extended-state="6" />
-    <editor active="true" />
+    <frame x="56" y="-6" width="1551" height="913" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11679687" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.116460636" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="SonarLint" order="7" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.22473605" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.22473605" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3994911" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3994911" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -313,9 +287,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#34#45#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -340,19 +311,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1924">
           <caret line="77" column="31" selection-start-line="77" selection-start-column="31" selection-end-line="77" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/haarcascades/hand.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55302">
-          <caret line="2127" selection-start-line="2127" selection-end-line="2127" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/haarcascades/hand.xml" />
     <entry file="file://$PROJECT_DIR$/src/lineExample.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
@@ -364,9 +326,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#34#45#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -391,19 +350,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1924">
           <caret line="77" column="31" selection-start-line="77" selection-start-column="31" selection-end-line="77" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/haarcascades/hand.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55302">
-          <caret line="2127" selection-start-line="2127" selection-end-line="2127" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/haarcascades/hand.xml" />
     <entry file="file://$PROJECT_DIR$/src/lineExample.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
@@ -415,9 +365,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#34#45#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -442,19 +389,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2002">
           <caret line="77" column="31" lean-forward="true" selection-start-line="77" selection-start-column="31" selection-end-line="77" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/haarcascades/hand.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55302">
-          <caret line="2127" selection-start-line="2127" selection-end-line="2127" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/haarcascades/hand.xml" />
     <entry file="file://$PROJECT_DIR$/src/lineExample.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
@@ -466,9 +404,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#34#45#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -500,9 +435,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#34#45#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -510,9 +442,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="988">
           <caret line="38" column="31" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -530,9 +459,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="338">
           <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -547,9 +473,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#34#45#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -567,9 +490,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="338">
           <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -584,9 +504,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#34#45#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -611,9 +528,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#34#45#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -621,9 +535,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
           <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -648,9 +559,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#34#45#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -664,47 +572,20 @@
     <entry file="file://$PROJECT_DIR$/test.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/haarcascades/face.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="33314" selection-start-line="33314" selection-end-line="33314" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/haarcascades/eye.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="668">
-          <caret line="12213" selection-start-line="12213" selection-end-line="12213" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/haarcascades/upper_body.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="28134" selection-start-line="28134" selection-end-line="28134" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/haarcascades/hand.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59556">
-          <caret line="2127" selection-start-line="2127" selection-end-line="2127" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/haarcascades/face.xml" />
+    <entry file="file://$PROJECT_DIR$/haarcascades/eye.xml" />
+    <entry file="file://$PROJECT_DIR$/haarcascades/upper_body.xml" />
+    <entry file="file://$PROJECT_DIR$/haarcascades/hand.xml" />
     <entry file="file://$PROJECT_DIR$/src/identifyExample.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#34#45#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/videoCapExample.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1204">
+        <state relative-caret-position="1118">
           <caret line="46" column="18" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
           <folding>
             <element signature="e#34#45#0" expanded="true" />
@@ -716,23 +597,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3332">
           <caret line="122" column="22" selection-start-line="122" selection-start-column="22" selection-end-line="122" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="85" column="5" lean-forward="true" selection-start-line="85" selection-start-column="5" selection-end-line="85" selection-end-column="5" />
+        <state relative-caret-position="2210">
+          <caret line="85" column="5" selection-start-line="85" selection-start-column="5" selection-end-line="85" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/handDetection2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="794">
-          <caret line="174" lean-forward="true" selection-start-line="174" selection-end-line="174" />
+        <state relative-caret-position="668">
+          <caret line="174" selection-start-line="174" selection-end-line="174" />
           <folding>
             <element signature="e#20#34#0" expanded="true" />
           </folding>
