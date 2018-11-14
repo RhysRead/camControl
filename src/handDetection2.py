@@ -1,5 +1,9 @@
-# Rhys Read
-# Test
+#!/usr/bin/env python3
+
+"""handDetection2.py: A mess of spaghetti code that I was prototyping with."""
+
+__author__ = "Rhys Read"
+__copyright__ = "Copyright 2018, Rhys Read"
 
 import logging
 import cv2
