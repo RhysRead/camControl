@@ -22,6 +22,8 @@ class CursorManager(object):
         self.__screen_size = pyautogui.size()
         self.__ratio = get_cursor_ratio(image_size, self.__screen_size)
 
+        self.__enabled = True
+
     def __execute_ratio(self, position: tuple):
         x = position[0] * self.__ratio[0]
         y = position[1] * self.__ratio[1]
@@ -29,9 +31,18 @@ class CursorManager(object):
         return x, y
 
     def move_cursor(self, unratioed_position: tuple):
+        if self.__enabled is False:
+            return
+
         new_position = self.__execute_ratio(unratioed_position)
 
         pyautogui.position(new_position[0], new_position[1])
 
     def get_screen_size(self):
         return self.__screen_size
+
+    def enable(self):
+        self.__enabled = True
+
+    def disable(self):
+        self.__enabled = False
