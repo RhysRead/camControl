@@ -115,22 +115,20 @@ def move_cursor_with_ratio(hand, xratio, yratio):
 if __name__ == "__main__":
     cap = cv2.VideoCapture(0)
 
+    if not cap.isOpened():
+        logging.fatal("Failed to open video capture feed. This is most likely the camera not being seen")
+
     cap_x_size = cap.get(3)
     cap_y_size = cap.get(4)
 
     screen_x_size, screen_y_size = pyautogui.size()
 
-    if cap_y_size != 0:
-        logging.WARNING("Failed to generate cursor ratios.")
-        x_ratio = screen_x_size / cap_y_size
-        y_ratio = screen_y_size / cap_y_size
+    x_ratio = screen_x_size / cap_y_size
+    y_ratio = screen_y_size / cap_y_size
 
     hand_cascade = cv2.CascadeClassifier(HAND_HAARCASCADE)
 
     move = True
-
-    if not cap.isOpened():
-        logging.fatal("Failed to open video capture feed. This is most likely the camera not being seen")
 
     while cap.isOpened():
         got_hands_multiple = []
