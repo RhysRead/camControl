@@ -12,6 +12,8 @@ from ImageProcessing import Image, ImageManager
 from CursorProcessing import CursorManager
 from UserInterface import InterfaceManager
 
+from cv2 import imshow
+
 logging.basicConfig(level=logging.DEBUG)
 
 
@@ -28,7 +30,11 @@ class Main(object):
 
             self.__image_manager.add_image(frame)
             position = self.__image_manager.get_average_position()
-            self.__cursor_manager.move_cursor(position)
+
+            if position is not None:
+                self.__cursor_manager.move_cursor(position)
+
+            imshow("Video", frame)
 
         # Stop procedure:
         self.__video_feed.close_feed()
