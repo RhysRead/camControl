@@ -25,19 +25,26 @@ class Main(object):
         self.__interface_manager = InterfaceManager(self.__cursor_manager)
 
     def start(self):
+        # Main loop
         while True:
+            # Capture image from video feed
             frame = self.__video_feed.capture_image()
 
+            # Log and process the image
             self.__image_manager.add_image(frame)
             position = self.__image_manager.get_average_position()
 
+            # Move the cursor if a valid position is found
             if position is not None:
                 self.__cursor_manager.move_cursor(position)
 
+            # Present the un-edited image to the user
             imshow("Video", frame)
 
+            # Get the user input
             user_input = self.__interface_manager.get_user_input()
 
+            # Quit if the user selected the exit key
             if user_input == 1:
                 break
 
@@ -45,6 +52,7 @@ class Main(object):
         self.__video_feed.close_feed()
 
 
+# Execute main loop if Main.py is executed as the main thread
 if __name__ == "__main__":
     main = Main()
     main.start()
