@@ -16,8 +16,14 @@ class InterfaceManager(object):
         self.__cursor_manager = cursor_manager
 
     def get_user_input(self):
+        """
+        Used to retrieve and handle the user input.
+        :return: The code relevant to the user input.
+        """
+        # Use opencv2 to get the user's input
         value = cv2.waitKey(1)
 
+        # Handle the user's input
         if value == ord('q'):
             # Return 1 if exit button is pressed.
             return 1
