@@ -36,6 +36,11 @@ class Main(object):
 
             imshow("Video", frame)
 
+            user_input = self.__interface_manager.get_user_input()
+
+            if user_input == 1:
+                break
+
         # Stop procedure:
         self.__video_feed.close_feed()
 
