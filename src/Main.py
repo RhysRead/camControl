@@ -25,6 +25,10 @@ class Main(object):
         self.__interface_manager = InterfaceManager(self.__cursor_manager)
 
     def start(self):
+        """
+        Used to execute the main loop of camControl.
+        :return None:
+        """
         # Main loop
         while True:
             # Capture image from video feed
