@@ -85,6 +85,9 @@ class ImageManager(object):
         """
         image = process_image(image)
 
+        if image is None:
+            return
+
         if len(self.__buffer) == self.__buffer_size:
             self.__buffer.pop()
 
@@ -164,7 +167,7 @@ def get_hand_position(hand):
     :return: (x, y,) representing the centre position of the hand provided.
     """
     x, y, w, h = hand
-    # todo: Work out whether this works to get the centre of the hands position:
+    # todo: Work out whether this works to get the centre of the hands position: Pretty sure it does but test more
     return (x + x) / 2, (y + y) / 2,
 
 
@@ -181,7 +184,7 @@ def process_image(image: Image):
     largest_hand = get_largest_hand(hands)
     if largest_hand is None:
         return None
-    largest_hand_image = Image(largest_hand)
+    largest_hand_image = Image(list(largest_hand))
     largest_hand_image.set_hand_position((largest_hand[0], largest_hand[1],))
 
     return largest_hand_image
