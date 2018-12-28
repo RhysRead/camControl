@@ -12,7 +12,7 @@ from ImageProcessing import Image, ImageManager
 from CursorProcessing import CursorManager
 from UserInterface import InterfaceManager
 
-from cv2 import imshow
+from cv2 import imshow, rectangle, flip
 
 logging.basicConfig(level=logging.DEBUG)
 
@@ -34,16 +34,23 @@ class Main(object):
             # Capture image from video feed
             frame = self.__video_feed.capture_image()
 
+            # Flip the image on the horizontal axis
+            frame = flip(frame, 1)
+
             # Log and process the image
-            self.__image_manager.add_image(frame)
+            self.__image_manager.add_image(Image(frame))
             position = self.__image_manager.get_average_position()
 
             # Move the cursor if a valid position is found
             if position is not None:
                 self.__cursor_manager.move_cursor(position)
+                # Get the rounded integer value for the cursor position as a tuple
+                xy = (int(round(position[0])), int(round(position[1])),)
+                # Draw a dot over the image to represent where the hand has been seen
+                edited_image = rectangle(frame, xy, xy, (0, 255, 0,), 20)
 
-            # Present the un-edited image to the user
-            imshow("Video", frame)
+                # Present the un-edited image to the user
+                imshow("Video", edited_image)
 
             # Get the user input
             user_input = self.__interface_manager.get_user_input()

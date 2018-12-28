@@ -54,9 +54,12 @@ class CursorManager(object):
         if self.__enabled is False:
             return
 
+        print("1")
         new_position = self.__execute_ratio(unratioed_position)
 
-        pyautogui.position(new_position[0], new_position[1])
+        print(new_position)
+
+        pyautogui.moveTo(new_position[0], new_position[1])
 
     def get_screen_size(self):
         """

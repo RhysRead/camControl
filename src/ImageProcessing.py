@@ -102,15 +102,23 @@ class ImageManager(object):
         Get the average position of the hand across the logged buffer permissions.
         :return: The average position of the hand across the logged buffer permissions.
         """
-        if len(self.__buffer) == 0:
+        if len(self.__buffer) == 0 or self.__buffer[0] is None:
             return None
 
-        position = self.__buffer[0].get_hand_position()
+        position = list(self.__buffer[0].get_hand_position())
 
+        if position is None:
+            return None
+
+        mean_count = 1
         for hand in self.__buffer[1:]:
-            position += hand.get_hand_position()
+            if hand is None:
+                continue
+            mean_count += 1
+            position[0] += hand.get_hand_position()[0]
+            position[1] += hand.get_hand_position()[1]
 
-        return position / len(self.__buffer)
+        return tuple([i / mean_count for i in position])
 
 
 def get_hands(image: list):
@@ -122,7 +130,7 @@ def get_hands(image: list):
     hands = hand_cascade.detectMultiScale(image)
 
     if hands is None:
-        return
+        return None
 
     return hands
 
@@ -171,5 +179,9 @@ def process_image(image: Image):
 
     hands = get_hands(gray_blur_image.get_image())
     largest_hand = get_largest_hand(hands)
+    if largest_hand is None:
+        return None
+    largest_hand_image = Image(largest_hand)
+    largest_hand_image.set_hand_position((largest_hand[0], largest_hand[1],))
 
-    return largest_hand
+    return largest_hand_image
