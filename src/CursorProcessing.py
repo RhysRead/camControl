@@ -7,6 +7,7 @@ __author__ = "Rhys Read"
 __copyright__ = "Copyright 2018, Rhys Read"
 
 import pyautogui
+import threading
 
 
 def get_cursor_ratio(image_size: tuple, screen_size: tuple):
@@ -54,12 +55,12 @@ class CursorManager(object):
         if self.__enabled is False:
             return
 
-        print("1")
+        # Apply the previously calculated ratio to the hand position to move the cursor to the appropriate position
         new_position = self.__execute_ratio(unratioed_position)
 
-        print(new_position)
-
-        pyautogui.moveTo(new_position[0], new_position[1])
+        # Create a separate thread to move the cursor over a period of time to avoid hanging the program
+        t = threading.Thread(target=async_move, args=(new_position, 0.1))
+        t.start()
 
     def get_screen_size(self):
         """
@@ -81,3 +82,7 @@ class CursorManager(object):
         :return None:
         """
         self.__enabled = False
+
+
+def async_move(position, time):
+    pyautogui.moveTo(position[0], position[1], time)

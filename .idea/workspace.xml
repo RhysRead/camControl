@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5959df97-308f-481a-8908-938bc220e7c2" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/ImageProcessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ImageProcessing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CursorProcessing.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/CursorProcessing.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -49,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ImageProcessing.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ImageProcessing.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ImageProcessing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="87" column="25" lean-forward="true" selection-start-line="87" selection-start-column="25" selection-end-line="87" selection-end-column="25" />
+            <state relative-caret-position="167">
+              <caret line="166" column="25" selection-start-line="166" selection-start-column="25" selection-end-line="166" selection-end-column="25" />
               <folding>
                 <element signature="e#204#218#0" expanded="true" />
               </folding>
@@ -61,11 +61,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CursorProcessing.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CursorProcessing.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/CursorProcessing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1162">
-              <caret line="61" column="25" selection-start-line="61" selection-start-column="25" selection-end-line="61" selection-end-column="25" />
+            <state relative-caret-position="317">
+              <caret line="60" column="104" lean-forward="true" selection-start-line="60" selection-start-column="104" selection-end-line="60" selection-end-column="104" />
+              <folding>
+                <element signature="e#225#241#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -101,6 +104,7 @@
       <find>set_hand_position</find>
       <find>pro</find>
       <find>get_aver</find>
+      <find>pri</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -123,9 +127,9 @@
         <option value="$PROJECT_DIR$/src/handDetection2.py" />
         <option value="$PROJECT_DIR$/src/UserInterface.py" />
         <option value="$PROJECT_DIR$/src/ImageRetrieval.py" />
-        <option value="$PROJECT_DIR$/src/CursorProcessing.py" />
         <option value="$PROJECT_DIR$/src/Main.py" />
         <option value="$PROJECT_DIR$/src/ImageProcessing.py" />
+        <option value="$PROJECT_DIR$/src/CursorProcessing.py" />
       </list>
     </option>
   </component>
@@ -315,7 +319,7 @@
       <window_info anchor="bottom" id="Find" order="1" weight="0.32951653" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="8" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34732825" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.34732825" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -440,19 +444,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CursorProcessing.py">
+    <entry file="file://$PROJECT_DIR$/src/ImageProcessing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1162">
-          <caret line="61" column="25" selection-start-line="61" selection-start-column="25" selection-end-line="61" selection-end-column="25" />
+        <state relative-caret-position="167">
+          <caret line="166" column="25" selection-start-line="166" selection-start-column="25" selection-end-line="166" selection-end-column="25" />
+          <folding>
+            <element signature="e#204#218#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ImageProcessing.py">
+    <entry file="file://$PROJECT_DIR$/src/CursorProcessing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="87" column="25" lean-forward="true" selection-start-line="87" selection-start-column="25" selection-end-line="87" selection-end-column="25" />
+        <state relative-caret-position="317">
+          <caret line="60" column="104" lean-forward="true" selection-start-line="60" selection-start-column="104" selection-end-line="60" selection-end-column="104" />
           <folding>
-            <element signature="e#204#218#0" expanded="true" />
+            <element signature="e#225#241#0" expanded="true" />
           </folding>
         </state>
       </provider>
