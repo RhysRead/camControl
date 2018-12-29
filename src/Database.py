@@ -21,10 +21,10 @@ class DataBaseManager(object):
         # Creates the table where the position the cursor is moved to and the time of the movement is stored
         self.__cur.execute('CREATE TABLE IF NOT EXISTS {} ('
                            'ID INTEGER PRIMARY KEY AUTOINCREMENT, '
-                           'SessionKey INTEGER, '
+                           'SessionKey INTEGER NOT NULL REFERENCES sessions(ID), '
                            'X INTEGER, '
                            'Y INTEGER, '
-                           'TimeStamp REAL)'.format(TABLE_CURSOR_NAME))
+                           'Time REAL)'.format(TABLE_CURSOR_NAME))
 
         self.__cur.execute('CREATE TABLE IF NOT EXISTS {} ('
                            'ID INTEGER PRIMARY KEY AUTOINCREMENT, '
