@@ -31,6 +31,8 @@ class Main(object):
         Used to execute the main loop of camControl.
         :return None:
         """
+        # Creates a session and gets the session key
+        session_key = self.__database_manager.create_session()
         # Main loop
         while True:
             # Capture image from video feed
@@ -46,7 +48,7 @@ class Main(object):
             # Move the cursor if a valid position is found
             if position is not None:
                 # Log the cursor movement to the database
-                self.__database_manager.store_cursor(position)
+                self.__database_manager.store_cursor(position, session_key)
                 # Execute the cursor movement to the position found
                 self.__cursor_manager.move_cursor(position)
                 # Get the rounded integer value for the cursor position as a tuple
@@ -66,6 +68,7 @@ class Main(object):
 
         # Stop procedure:
         self.__video_feed.close_feed()
+        self.__database_manager.end_session(session_key)
         self.__database_manager.save_changes()
 
 
