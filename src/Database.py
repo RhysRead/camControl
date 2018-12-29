@@ -10,6 +10,7 @@ from time import time
 
 DATABASE_NAME = "../database.db"
 TABLE_CURSOR_NAME = "cursor_log"
+TABLE_SESSION_NAME = "sessions"
 
 
 class DataBaseManager(object):
@@ -20,16 +21,38 @@ class DataBaseManager(object):
         # Creates the table where the position the cursor is moved to and the time of the movement is stored
         self.__cur.execute('CREATE TABLE IF NOT EXISTS {} ('
                            'ID INTEGER PRIMARY KEY AUTOINCREMENT, '
+                           'SessionKey INTEGER, '
                            'X INTEGER, '
                            'Y INTEGER, '
                            'TimeStamp REAL)'.format(TABLE_CURSOR_NAME))
 
-    def store_cursor(self, position: tuple):
+        self.__cur.execute('CREATE TABLE IF NOT EXISTS {} ('
+                           'ID INTEGER PRIMARY KEY AUTOINCREMENT, '
+                           'SessionKey INTEGER, '
+                           'TimeStart REAL, '
+                           'TimeEnd REAL)'.format(TABLE_SESSION_NAME))
+
+    def create_session(self):
+
+        session_key = 
+
         self.__cur.execute('INSERT INTO {} VALUES ('
                            'NULL,'
                            '?, '
                            '?, '
-                           '?)'.format(TABLE_CURSOR_NAME), (position[0], position[1], time(), ))
+                           'NULL)'.format(TABLE_CURSOR_NAME), (session_key, time()))
+
+        return session_key
+
+    def end_session
+
+    def store_cursor(self, position: tuple, session_key: int):
+        self.__cur.execute('INSERT INTO {} VALUES ('
+                           'NULL,'
+                           '?, '
+                           '?, '
+                           '?, '
+                           '?)'.format(TABLE_CURSOR_NAME), (position[0], position[1], time(), session_key,))
 
     def get_cursor(self):
         self.__cur.execute('SELECT * FROM {}'.format(TABLE_CURSOR_NAME))
