@@ -11,6 +11,7 @@ from ImageRetrieval import Camera
 from ImageProcessing import Image, ImageManager
 from CursorProcessing import CursorManager
 from UserInterface import InterfaceManager
+from Database import DataBaseManager
 
 from cv2 import imshow, rectangle, flip
 
@@ -23,6 +24,7 @@ class Main(object):
         self.__image_manager = ImageManager()
         self.__cursor_manager = CursorManager(self.__video_feed.get_image_size())
         self.__interface_manager = InterfaceManager(self.__cursor_manager)
+        self.__database_manager = DataBaseManager()
 
     def start(self):
         """
@@ -43,6 +45,9 @@ class Main(object):
 
             # Move the cursor if a valid position is found
             if position is not None:
+                # Log the cursor movement to the database
+                self.__database_manager.store_cursor(position)
+                # Execute the cursor movement to the position found
                 self.__cursor_manager.move_cursor(position)
                 # Get the rounded integer value for the cursor position as a tuple
                 xy = (int(round(position[0])), int(round(position[1])),)
