@@ -66,6 +66,7 @@ class Main(object):
 
         # Stop procedure:
         self.__video_feed.close_feed()
+        self.__database_manager.save_changes()
 
 
 # Execute main loop if Main.py is executed as the main thread

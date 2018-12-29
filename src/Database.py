@@ -6,37 +6,49 @@ __author__ = "Rhys Read"
 __copyright__ = "Copyright 2018, Rhys Read"
 
 import sqlite3
+from time import time
+
+DATABASE_NAME = "../database.db"
+TABLE_CURSOR_NAME = "cursor_log"
 
 
 class DataBaseManager(object):
     def __init__(self):
-        self.__con = sqlite3.connect('../database.db')
+        self.__con = sqlite3.connect(DATABASE_NAME)
         self.__cur = self.__con.cursor()
 
         # Creates the table where the position the cursor is moved to and the time of the movement is stored
-        self.__cur.execute('CREATE TABLE IF NOT EXISTS cursor_log ('
+        self.__cur.execute('CREATE TABLE IF NOT EXISTS {} ('
                            'ID INTEGER PRIMARY KEY AUTOINCREMENT, '
                            'X INTEGER, '
                            'Y INTEGER, '
-                           'TimeStamp DATETIME DEFAULT CURRENT_TIMESTAMP)')
+                           'TimeStamp REAL)'.format(TABLE_CURSOR_NAME))
 
     def store_cursor(self, position: tuple):
-        self.__cur.execute('INSERT INTO cursor_log ('
+        self.__cur.execute('INSERT INTO {} VALUES ('
+                           'NULL,'
                            '?, '
-                           '?)', (position[0], position[1], ))
+                           '?, '
+                           '?)'.format(TABLE_CURSOR_NAME), (position[0], position[1], time(), ))
 
     def get_cursor(self):
-        self.__cur.execute('SELECT * FROM cursor_log')
+        self.__cur.execute('SELECT * FROM {}'.format(TABLE_CURSOR_NAME))
         return self.__cur.fetchall()
 
+    def save_changes(self):
+        self.__cur.close()
+        self.__con.commit()
+        self.__con.close()
 
-def wipe_database(database_name: str):
+
+def drop_table(database_name: str, table_name: str):
     con = sqlite3.connect(database_name)
-    con.cursor().execute('DELETE * FROM *')
+    con.cursor().execute("DELETE FROM {}".format(table_name))
 
 
 if __name__ == '__main__':
+    # Small manual test to make sure everything works properly:
     manager = DataBaseManager()
     manager.store_cursor((0, 0,))
-    manager.get_cursor()
-    wipe_database('../database.db')
+    print(manager.get_cursor())
+    manager.save_changes()
