@@ -50,7 +50,7 @@ class CursorManager(object):
         """
         Used to move the cursor to the new position. Calculates the ratio automatically.
         :param unratioed_position: (x, y,) the unratioed position to move the cursor to.
-        :return None:
+        :return: None
         """
         if self.__enabled is False:
             return
