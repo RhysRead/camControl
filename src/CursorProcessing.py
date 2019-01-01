@@ -84,5 +84,11 @@ class CursorManager(object):
         self.__enabled = False
 
 
-def async_move(position, time):
+def async_move(position: tuple, time: float):
+    """
+    Method to asynchronously move the cursor to a position of a period of time.
+    :param position: The tuple (x, y,) position you desire to move the cursor to.
+    :param time: The float value for the time you would like the cursor to take to assume the new position.
+    :return: None
+    """
     pyautogui.moveTo(position[0], position[1], time)
