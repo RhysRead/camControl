@@ -56,7 +56,7 @@ class DataBaseManager(object):
         :param session_key: Integer ID key for the session you desire to end.
         :return: None
         """
-        self.__cur.execute("UPDATE {} SET TimeEnd = ? WHERE SessionKey = ?".format(TABLE_SESSION_NAME),
+        self.__cur.execute("UPDATE {} SET TimeEnd = ? WHERE ID = ?".format(TABLE_SESSION_NAME),
                            (time(), session_key, ))
 
     def store_cursor(self, position: tuple, session_key: int):
