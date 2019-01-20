@@ -73,6 +73,7 @@ class DataBaseManager(object):
                            '?, '
                            '?)'.format(TABLE_CURSOR_NAME), (session_key, position[0], position[1], time(),))
 
+    # Todo: Tweak get_sessions and get_cursor to be the same method as they could be the same:
     def get_sessions(self):
         """
         Used to get a list of all sessions that have been stored.

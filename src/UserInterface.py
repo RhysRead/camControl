@@ -12,6 +12,10 @@ import cv2
 
 class InterfaceManager(object):
     def __init__(self, cursor_manager):
+        """
+        Used to read a user input and respond accordingly.
+        :param cursor_manager: CursorManager object.
+        """
         self.__windows = {}
         self.__cursor_manager = cursor_manager
 
