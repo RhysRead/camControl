@@ -20,7 +20,9 @@ logging.basicConfig(level=logging.DEBUG)
 
 class Main(object):
     def __init__(self):
+        # Create Camera object to act as the video feed
         self.__video_feed = Camera()
+        # Create manager objects to control and manage the program.
         self.__image_manager = ImageManager()
         self.__cursor_manager = CursorManager(self.__video_feed.get_image_size())
         self.__interface_manager = InterfaceManager(self.__cursor_manager)
