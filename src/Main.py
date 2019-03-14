@@ -24,7 +24,13 @@ class Main(object):
         self.__video_feed = Camera()
         # Create manager objects to control and manage the program.
         self.__image_manager = ImageManager()
-        self.__cursor_manager = CursorManager(self.__video_feed.get_image_size())
+        # Get image size from video feed
+        image_size = self.__video_feed.get_image_size()
+        # If image size is 0 then the webcam is not connected, hence halt the program
+        if image_size[0] or image_size[1] == 0:
+            logging.error('Please connect a valid USB webcam.')
+            exit(1)
+        self.__cursor_manager = CursorManager(image_size)
         self.__interface_manager = InterfaceManager(self.__cursor_manager)
         self.__database_manager = DataBaseManager()
 
